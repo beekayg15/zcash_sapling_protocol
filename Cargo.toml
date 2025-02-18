@@ -1,0 +1,23 @@
+[package]
+name = "zcash_sapling_protocol"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bls12-381 = "0.4.0"
+ark-crypto-primitives = {version= "0.4.0", features = ["merkle_tree","signature","r1cs","prf","commitment"]}
+ark-ec = "0.4.2"
+ark-ed-on-bls12-381 = {version="0.4.0", features = ["r1cs"]}
+ark-ff = "0.4.2"
+ark-groth16 = "0.4.0"
+ark-r1cs-std = "0.4.0"
+ark-relations = "0.4.0"
+ark-serialize = "0.4.2"
+ark-std = "0.4.0"
+ark-test-curves = "0.4.2"
+blake2 = "0.10.6"
+blake2b_simd = "1.0.2"
+blake2s_simd = "1.0.2"
+rand = "0.8.5"
+tracing = { version = "0.1", default-features = false, features = [ "attributes" ] }
+tracing-subscriber = { version = "0.2" }
